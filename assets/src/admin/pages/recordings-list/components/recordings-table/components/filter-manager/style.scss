@@ -1,0 +1,123 @@
+@import "~admin-stylesheets/colors";
+
+.neliosr-filter-manager {
+
+	&__control {
+		position: relative;
+	}
+
+	&__control-count {
+		background-color: var(--wp-components-color-accent, var(--wp-admin-theme-color, #3858e9));
+		border-radius: 50%;
+		color: #fff;
+		padding: 0 4px 1px 4px;
+		font-size: 10px;
+		position: absolute;
+		top: 19px;
+		right: 2px;
+	}
+}
+
+.neliosr-filter-section {
+	display: flex;
+	gap: 1em;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	margin-top: 1em;
+
+	&__filter {
+
+		&-description {
+			display: flex;
+			gap: 0.5em;
+
+			span {
+				overflow: hidden;
+				white-space: nowrap;
+				display: block;
+				text-overflow: ellipsis;
+				max-width: 30em;
+			}
+		}
+	}
+
+	&__filter-container {
+		width: max-content;
+		padding: 1em 1em 0.5em 1em;
+
+		&.neliosr-filter-ab-testing {
+			min-width: 25em;
+		}
+	}
+
+	&__filter-actions {
+		margin-top: 2em;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.neliosr-custom-date-range-selector {
+	margin-top: 1em;
+}
+
+label[for="neliosr-variants-list"],
+label[for="neliosr-goals-list"] {
+	margin-top: 1em;
+}
+
+.neliosr-variants-list,
+.neliosr-goals-list {
+
+	&__item {
+
+		&-label {
+			margin: 0;
+			display: flex;
+		}
+
+		> div {
+			display: flex;
+		}
+	}
+
+	.neliosr-alternative__letter {
+		border-radius: 50%;
+		box-sizing: content-box;
+		color: $color__text-alternative;
+		display: block;
+		flex-grow: 0;
+		flex-shrink: 0;
+		font-size: 0.7rem;
+		height: 1em;
+		line-height: 1;
+		margin: 0;
+		margin-right: 0.5em;
+		padding: 0.5em;
+		text-align: center;
+		transition:
+			250ms background ease-in-out,
+			250ms color ease-in-out;
+		width: 1em;
+	}
+
+	$colors: (
+		$color__background-alternative-a,
+		$color__background-alternative-b,
+		$color__background-alternative-c,
+		$color__background-alternative-d,
+		$color__background-alternative-e,
+		$color__background-alternative-f
+	);
+	$i: 1;
+
+	@each $color in $colors {
+		.neliosr-variants-list__item:nth-child(6n + #{$i})
+		.neliosr-alternative__letter {
+			background: $color;
+		}
+		$i: $i + 1;
+	}
+}

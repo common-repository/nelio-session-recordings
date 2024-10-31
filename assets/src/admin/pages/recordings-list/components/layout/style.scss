@@ -1,0 +1,78 @@
+@import "~admin-stylesheets/colors";
+
+.nelio-session-recordings-container {
+	position: relative;
+	width: 100%;
+	min-height: 20em;
+
+	table {
+		overflow-x: hidden;
+	}
+}
+
+.neliosr-subscription-control {
+	padding: 0 0 4px 0;
+	min-width: 35em;
+
+	.neliosr-quota-meter__bar-container {
+		background-color: $color__border-editor;
+	}
+
+	&--row {
+		align-self: center;
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+
+		.neliosr-quota-meter {
+			flex-grow: 1;
+		}
+	}
+
+	&__license {
+		flex-grow: 1;
+	}
+
+	&__menu {
+		margin-top: 1em;
+	}
+}
+
+@media screen and (max-width: 782px) {
+
+	.neliosr-subscription-control__start,
+	.neliosr-subscription-control__cancel {
+		min-height: 40px;
+	}
+}
+
+@media (min-width: 783px) {
+
+	.neliosr-subscription-control__start,
+	.neliosr-subscription-control__cancel {
+		height: 32px;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.nelio-session-recordings-wrapper__header {
+		align-self: center;
+		display: flex;
+		height: 63px;
+	}
+
+	.neliosr-table-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.neliosr-active-recordings {
+			margin-top: 0;
+		}
+	}
+
+	.neliosr-subscription-control {
+		padding: 9px 0 4px;
+	}
+}

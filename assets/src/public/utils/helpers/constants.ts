@@ -1,0 +1,9 @@
+export const MAX_LAMBDA_PAYLOAD = 5800000;
+export const INTERVAL_TO_SYNC = 1000; // in milliseconds
+export const SESSION_MAX_TIME = 4 * 60 * 60 * 1000; // 4 hours in milliseconds
+export const SESSION_MAX_TIME_BETWEEN_EVENTS = 30 * 60 * 1000; // 30 minutes in milliseconds
+export const LONG_SESSION_TIME = 1000 * 30; // 30 seconds in milliseconds
+export const RAGE_CLICK_DELTA_TIME_THRESHOLD = 600; // in milliseconds
+export const RAGE_CLICK_COUNT_THRESHOLD = 6;
+export const U_TURN_DELTA_TIME_THRESHOLD = 7000; // in milliseconds
+export const MAX_NODE_TEXT_LENGTH = 140;

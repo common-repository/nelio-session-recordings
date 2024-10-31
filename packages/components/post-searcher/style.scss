@@ -1,0 +1,90 @@
+@import "~admin-stylesheets/colors";
+
+.neliosr-post-option-in-post-searcher {
+	$image-size: 52px;
+	$padding: 12px;
+
+	cursor: default;
+	min-height: #{$image-size};
+	padding: $padding;
+
+	&__image {
+		background: $color__background-default-image;
+		float: left;
+		font-size: $image-size;
+		height: 1em;
+		overflow: hidden;
+		position: relative;
+		width: 1em;
+	}
+
+	&__actual-image {
+		background-size: cover;
+		bottom: 0;
+		height: 1em;
+		left: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 1em;
+	}
+
+	&__title {
+		margin-left: #{$image-size + $padding};
+	}
+
+	&__details {
+		margin-left: #{$image-size + $padding};
+		font-size: 0.9em;
+		opacity: 0.7;
+	}
+
+	&--is-selected {
+		background: #f5f5fa;
+	}
+
+	&:hover,
+	&--is-focused {
+		color: #fff;
+		background: $color__border-blue;
+	}
+}
+
+.neliosr-test-option-in-post-searcher {
+	$image-size: 52px;
+	$padding: 12px;
+
+	cursor: default;
+	min-height: #{$image-size};
+	padding: $padding;
+
+	&__image {
+		background: transparent;
+		float: left;
+		font-size: $image-size;
+		height: 1em;
+		overflow: hidden;
+		position: relative;
+		width: 1em;
+	}
+
+	&__title {
+		margin-left: #{$image-size + $padding};
+	}
+
+	&__details {
+		margin-left: #{$image-size + $padding};
+		font-size: 0.9em;
+		opacity: 0.7;
+	}
+
+	&--is-selected {
+		background: #f5f5fa;
+	}
+
+	&:hover,
+	&--is-focused {
+		color: #fff;
+		background: $color__border-blue;
+	}
+}

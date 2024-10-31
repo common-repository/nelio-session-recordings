@@ -1,0 +1,54 @@
+@import "~admin-stylesheets/breakpoints";
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/variables";
+
+#wpbody-content {
+	padding-bottom: 0;
+}
+
+.neliosr-recording-container {
+	min-height: calc(100vh - ($admin-bar-height * 2));
+	margin: 0;
+	display: flex;
+	align-items: center;
+	position: relative;
+	transition: margin 200ms ease-in-out;
+
+	&--is-sidebar-visible {
+		margin-right: $editor-sidebar-width;
+	}
+
+	&__loading-message {
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+}
+
+.neliosr-recording-sidebar {
+	background-color: $color__background-editor;
+	margin-bottom: 2em;
+	transition: all 200ms ease-in-out;
+
+	@include break-medium {
+		margin-bottom: 0;
+		height: 100vh;
+		overflow: hidden;
+		padding-top: $admin-bar-height;
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: $editor-sidebar-width;
+
+		&--closed {
+			margin-right: -$editor-sidebar-width;
+		}
+	}
+}
+
+#neliosr-recording-player {
+	margin: 0 auto;
+}

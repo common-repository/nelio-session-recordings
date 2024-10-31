@@ -1,0 +1,7 @@
+dist
+.lando
+vendor
+node_modules
+*.json
+webpack.config.js
+.eslintrc.js

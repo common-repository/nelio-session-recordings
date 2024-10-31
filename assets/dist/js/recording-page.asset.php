@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('jquery', 'lodash', 'neliosr-components', 'neliosr-data', 'neliosr-date', 'neliosr-utils', 'wp-components', 'wp-data', 'wp-dom-ready', 'wp-element', 'wp-i18n', 'wp-notices'), 'version' => '64ccf2bad48cd88e584a');

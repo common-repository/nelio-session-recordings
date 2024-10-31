@@ -1,0 +1,35 @@
+.neliosr-recording-summary {
+	border-top: none;
+
+	&__row {
+		justify-content: flex-start;
+		max-height: 1.3em;
+		line-height: 1.3;
+		padding: 0;
+		margin: 0;
+
+		.neliosr-icon {
+			font-size: 1.3em;
+			line-height: 1.3;
+			vertical-align: middle;
+			height: 1.3em;
+			min-width: 1em;
+		}
+
+		&-description {
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			margin-left: 0.5em;
+		}
+
+		.neliosr-remove-action {
+			flex-grow: 1;
+			justify-content: center;
+		}
+
+		&:has(> .neliosr-remove-action) {
+			margin-top: 1em;
+		}
+	}
+}

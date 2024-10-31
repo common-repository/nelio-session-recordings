@@ -1,0 +1,44 @@
+@use "sass:color";
+@use "breakpoints";
+@use "colors";
+@use "variables";
+
+@mixin super-delete {
+	$red: colors.$color__text-red;
+	$dark-red: color.adjust($red, $lightness: -20%);
+	$darker-red: color.adjust($red, $lightness: -40%);
+
+	background: $red;
+	border-color: $dark-red;
+	box-shadow: inset 0 -1px 0 $dark-red;
+	color: #fff;
+	text-shadow:
+		0 -1px 1px $dark-red,
+		1px 0 1px $dark-red,
+		0 1px 1px $dark-red,
+		-1px 0 1px $dark-red;
+
+	&:hover,
+	&:active:enabled,
+	&:focus:enabled {
+		background: color.adjust($red, $lightness: -2%);
+		border-color: $darker-red;
+		box-shadow: inset 0 -1px 0 $darker-red;
+		color: #fff;
+		text-shadow:
+			0 -1px 1px $dark-red,
+			1px 0 1px $dark-red,
+			0 1px 1px $dark-red,
+			-1px 0 1px $dark-red;
+	}
+
+	&:focus:enabled {
+		box-shadow:
+			inset 0 -1px 0 $darker-red,
+			0 0 0 2px color.adjust($red, $lightness: 40%);
+	}
+
+	&:active:enabled {
+		box-shadow: inset 0 1px 0 $darker-red;
+	}
+}

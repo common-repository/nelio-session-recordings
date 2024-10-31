@@ -1,0 +1,37 @@
+{
+	"name": "@neliosr/utils",
+	"version": "1.0.0",
+	"description": "Utils library for Nelio Session Recordings.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"session",
+		"recordings",
+		"analytics"
+	],
+	"homepage": "https://neliosoftware.com/session-recordings/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-session-recordings",
+	"bugs": {},
+	"dependencies": {
+		"@neliosr/date": "file:../date",
+		"@neliosr/types": "file:../types"
+	},
+	"devDependencies": {
+		"@safe-wordpress/data": "^5.1.3",
+		"@safe-wordpress/dom-ready": "^3.2.3",
+		"@safe-wordpress/element": "^4.0.4",
+		"@safe-wordpress/i18n": "^4.2.2",
+		"@safe-wordpress/notices": "^3.8.0",
+		"@safe-wordpress/url": "^3.3.1",
+		"@types/lodash": "^4.14.171",
+		"@types/store": "^2.0.2",
+		"@types/uuid": "^8.3.4",
+		"@types/wordpress__data": "^4.6.10",
+		"@types/wordpress__notices": "^3.3.0",
+		"lodash": "^4.17.21",
+		"moment": "^2.29.3",
+		"uuid": "^8.3.2"
+	}
+}

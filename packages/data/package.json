@@ -1,0 +1,33 @@
+{
+	"name": "@neliosr/data",
+	"version": "1.0.0",
+	"description": "General data.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"session",
+		"recordings",
+		"analytics"
+	],
+	"homepage": "https://neliosoftware.com/session-recordings/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-session-recordings",
+	"bugs": {},
+	"dependencies": {
+		"@neliosr/date": "file:../date",
+		"@neliosr/types": "file:../types",
+		"@neliosr/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"@types/wordpress__data": "6.0.0",
+		"@types/wordpress__notices": "^3.3.0",
+		"@safe-wordpress/api-fetch": "^5.2.2",
+		"@safe-wordpress/data": "^4.8.0",
+		"@safe-wordpress/i18n": "^4.2.2",
+		"@safe-wordpress/notices": "^3.8.0",
+		"@safe-wordpress/url": "^3.3.1",
+		"lodash": "^4.17.21"
+	}
+}

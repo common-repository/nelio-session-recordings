@@ -1,0 +1,79 @@
+@import "~admin-stylesheets/colors";
+
+.neliosr-quota-meter {
+
+	&__title {
+		font-size: 0.9em;
+		margin-bottom: 0;
+		margin-top: 5px;
+	}
+
+	&__amount {
+		float: right;
+	}
+
+	&__bar-container {
+		background-color: $color__background-grey;
+		border-radius: 3px;
+		height: 20px;
+		padding: 0;
+		position: relative;
+	}
+
+	&__bar {
+		border-radius: 3px;
+		display: block;
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
+
+		@for $i from 0 through 100 {
+			&--width-#{$i} {
+				width: $i * 1%;
+				background-color: $color__background-green;
+
+				@if ($i <= 30) {
+					background-color: $color__background-orange;
+				}
+
+				@if ($i <= 15) {
+					background-color: $color__background-red;
+				}
+			}
+		}
+
+		&--disabled {
+			background-color: $color__text-disabled !important;
+		}
+	}
+
+	&--animation-appear {
+		background-color: $color__background-green !important;
+		width: 100% !important;
+		transition:
+			background-color 2s 500ms ease-in-out,
+			width 2s 500ms ease-in-out;
+
+		&-active {
+
+			@for $i from 0 through 100 {
+				&.neliosr-quota-meter__bar--width-#{$i} {
+					width: $i * 1% !important;
+					background-color: $color__background-green !important;
+
+					@if ($i <= 30) {
+						background-color: $color__background-orange !important;
+					}
+
+					@if ($i <= 15) {
+						background-color: $color__background-red !important;
+					}
+				}
+			}
+
+			&.neliosr-quota-meter__bar--disabled {
+				background-color: $color__text-disabled !important;
+			}
+		}
+	}
+}

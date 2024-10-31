@@ -1,0 +1,14 @@
+.nelio-session-recordings {
+
+	&__page-title {
+		display: flex !important;
+		align-items: center;
+		gap: 0.5em;
+		position: relative;
+		width: 100%;
+	}
+
+	&__toggle {
+		margin-bottom: 0 !important;
+	}
+}

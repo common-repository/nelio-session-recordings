@@ -1,0 +1,22 @@
+.neliosr-multiple-select-control {
+
+	.components-form-token-field {
+		max-width: 30em;
+
+		&__input-container {
+			background: "#fff";
+		}
+
+		&__help {
+			display: "none";
+		}
+
+		&__label {
+			display: "none";
+		}
+
+		&__suggestion {
+			min-height: auto;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+.neliosr-recording-settings {
+
+	&__sampling-rate-selector {
+		max-width: fit-content;
+	}
+
+	&__sampling-rate-percentage {
+		margin-top: 1em;
+		max-width: fit-content;
+	}
+
+	&__sampling-rate-amount {
+		margin-top: 1em;
+		max-width: fit-content;
+
+		input {
+			max-width: fit-content;
+			display: block;
+		}
+	}
+
+	&__recordings-scope {
+
+		.components-textarea-control__input {
+			max-width: 30em;
+			resize: vertical;
+		}
+	}
+
+	&__gdpr-cookie-value {
+		margin-top: 1em;
+	}
+
+	.components-base-control__field {
+		margin-bottom: 0;
+	}
+
+	.components-text-control__input {
+		max-width: fit-content;
+	}
+
+	.components-checkbox-control__input-container {
+		margin-right: 5px;
+		width: auto;
+		height: auto;
+	}
+
+	.components-checkbox-control__input[type="checkbox"] {
+		border: 1px solid #8c8f94;
+		border-radius: 4px;
+		height: 1rem;
+		width: 1rem;
+
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	.components-checkbox-control__label {
+		font-size: 14px;
+		margin-top: 4px;
+		margin-bottom: 0;
+	}
+
+	svg.components-checkbox-control__checked {
+		left: 8px;
+		top: 7px;
+	}
+
+	.neliosr-setting-description > * {
+		color: #646970;
+		font-size: 13px;
+	}
+
+	.neliosr-component-with-help {
+		position: relative;
+	}
+
+	.neliosr-description-icon {
+		color: #a8a8a8;
+		cursor: pointer;
+		left: -25px;
+		position: absolute;
+		top: 5px;
+	}
+}

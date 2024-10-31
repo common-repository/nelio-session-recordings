@@ -1,0 +1,184 @@
+@import "~admin-stylesheets/variables";
+@import "~admin-stylesheets/colors";
+
+.neliosr-recording-action {
+	border-radius: 5px;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 1em 0;
+	transition: outline 200ms 50ms ease-in-out;
+
+	&:not(#{&}--playing):hover {
+		border-color: rgba(0, 0, 40, 0.3);
+	}
+
+	&--playing {
+		outline: 2px solid #3858e9;
+	}
+
+	&--is_page {
+		border-color: rgba(0, 0, 40, 0.1);
+		background-color: rgba(0, 0, 0, 0.02);
+
+		> * {
+			font-weight: 700;
+		}
+	}
+
+	&--is_rage_click > * {
+		color: $color__text-red !important;
+		font-weight: 700;
+	}
+
+	&--is_nab_event {
+		border-color: rgba(0, 0, 40, 0.1);
+	}
+
+	.is-link {
+		color: inherit;
+		text-decoration: none;
+		padding: 0.4em 0.6em;
+		width: 100%;
+
+		&:focus:not(:disabled) {
+			box-shadow: none;
+		}
+	}
+
+	&__content {
+		display: flex;
+		width: 100%;
+		align-items: flex-start;
+	}
+
+	&__icon {
+		flex-grow: 0;
+
+		.neliosr-icon {
+			font-size: 1.3em;
+			line-height: 1.3;
+			vertical-align: middle;
+			height: 1.3em;
+			min-width: 1em;
+		}
+	}
+
+	&__label {
+		text-align: left;
+		flex-grow: 1;
+		padding: 0 0.5em;
+		padding-top: 3px;
+
+		.neliosr-ellipsis {
+			max-width: 185px;
+		}
+
+		div {
+			overflow-x: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			display: inline-block;
+			width: 100%;
+		}
+	}
+
+	&__time {
+		flex-grow: 0;
+		padding-top: 3px;
+	}
+
+	&:last-of-type {
+		margin-bottom: 2em;
+	}
+}
+
+.nab-event {
+
+	&-label {
+		text-transform: uppercase;
+		font-size: 0.8em;
+		font-weight: 400;
+		color: $color__text-disabled;
+		margin-top: 0.5em;
+
+		& ~ & {
+			margin-top: 1em;
+		}
+	}
+
+	&-test {
+		display: flex !important;
+		gap: 0.3em;
+		align-items: center;
+
+		&-icon {
+			width: 18px !important;
+		}
+
+		&-name {
+			max-width: 150px;
+		}
+	}
+
+	&-variant {
+		display: flex !important;
+		gap: 0.3em;
+		align-items: center;
+
+		&-name {
+			max-width: 150px;
+		}
+
+		&__letter {
+			border-radius: 50%;
+			box-sizing: content-box;
+			color: $color__text-alternative;
+			display: block;
+			flex-grow: 0;
+			flex-shrink: 0;
+			font-size: 0.6rem;
+			height: 1em;
+			line-height: 1;
+			margin: 0;
+			margin-right: 0.5em;
+			padding: 0.5em;
+			text-align: center;
+			transition:
+				250ms background ease-in-out,
+				250ms color ease-in-out;
+			width: 1em;
+
+			$colors: (
+				$color__background-alternative-a,
+				$color__background-alternative-b,
+				$color__background-alternative-c,
+				$color__background-alternative-d,
+				$color__background-alternative-e,
+				$color__background-alternative-f
+			);
+			$i: 0;
+
+			@each $color in $colors {
+				&-#{$i} {
+					background: $color;
+				}
+				$i: $i + 1;
+			}
+		}
+	}
+
+	&-conversion-goal {
+		display: flex !important;
+		gap: 0.3em;
+		align-items: center;
+
+		.dashicons {
+			font-size: 1rem;
+		}
+
+		&-name {
+			max-width: 150px;
+		}
+	}
+}

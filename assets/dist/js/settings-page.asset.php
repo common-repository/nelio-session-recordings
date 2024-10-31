@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('neliosr-components', 'neliosr-utils', 'wp-api-fetch', 'wp-components', 'wp-data', 'wp-date', 'wp-dom-ready', 'wp-element', 'wp-i18n', 'wp-notices', 'wp-url'), 'version' => '63ad9cd332d5f392e184');

@@ -1,0 +1,50 @@
+{
+	"name": "@neliosr/components",
+	"version": "1.0.0",
+	"description": "Components library for Nelio Session Recordings.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"session",
+		"recordings",
+		"analytics"
+	],
+	"homepage": "https://neliosoftware.com/session-recordings/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-session-recordings",
+	"bugs": {},
+	"dependencies": {
+		"@neliosr/data": "file:../data",
+		"@neliosr/date": "file:../date",
+		"@neliosr/i18n": "file:../i18n",
+		"@neliosr/utils": "file:../utils"
+	},
+	"devDependencies": {
+		"@automattic/interpolate-components": "^1.2.0",
+		"@safe-wordpress/api-fetch": "^5.2.2",
+		"@safe-wordpress/components": "^19.1.1",
+		"@safe-wordpress/compose": "^5.0.6",
+		"@safe-wordpress/data": "^5.1.3",
+		"@safe-wordpress/dom-ready": "^3.2.3",
+		"@safe-wordpress/element": "^4.0.4",
+		"@safe-wordpress/i18n": "^4.2.2",
+		"@safe-wordpress/notices": "^3.6.1",
+		"@safe-wordpress/url": "^3.3.1",
+		"@types/intro.js": "^3.0.2",
+		"@types/lodash": "^4.14.171",
+		"@types/react-select": "^3.0.4",
+		"@types/wordpress__data": "6.0.0",
+		"@types/wordpress__notices": "3.5.0",
+		"axios": "^0.27.2",
+		"classnames": "^2.3.1",
+		"intro.js": "^5.1.0",
+		"lodash": "^4.17.21",
+		"rc-tooltip": "^5.1.1",
+		"react-country-flag": "^3.1.0",
+		"react-select": "^5.3.2",
+		"react-select-async-paginate": "^0.6.1",
+		"react-transition-group": "^4.4.2",
+		"uuid": "^8.3.2"
+	}
+}

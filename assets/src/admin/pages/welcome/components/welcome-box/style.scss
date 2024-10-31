@@ -1,0 +1,54 @@
+@import "~admin-stylesheets/colors";
+
+.neliosr-welcome-message {
+	background: #fff;
+	border-radius: 2px;
+	box-shadow:
+		0 2px 0 #ddd,
+		0 2px 10px 0 $color__box-shadow;
+	display: block;
+	margin: 5em auto 1em;
+	max-width: 40em;
+	padding: 2em;
+	text-align: center;
+
+	&__logo {
+		max-width: 20em;
+	}
+
+	&__intro {
+		font-size: 18px;
+	}
+
+	&__license {
+		max-width: 90%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__policy {
+		max-width: 90%;
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	&__actions {
+		border-top: 1px solid $color__border-lighter;
+		margin: 2em auto 0;
+		max-width: 90%;
+		padding-top: 2em;
+	}
+
+	&__start.is-large {
+		font-size: 18px;
+		height: auto;
+		padding: 0.5em 1.5em;
+	}
+
+	&__error {
+		color: #a00;
+		margin: 2em auto 0;
+		max-width: 90%;
+		text-align: left;
+	}
+}

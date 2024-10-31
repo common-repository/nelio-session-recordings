@@ -1,0 +1,22 @@
+{
+	"name": "@neliosr/date",
+	"version": "1.0.0",
+	"description": "Date functions",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"session",
+		"recordings",
+		"analytics"
+	],
+	"homepage": "https://neliosoftware.com/session-recordings/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-session-recordings",
+	"bugs": {},
+	"devDependencies": {
+		"@safe-wordpress/date": "^4.8.0",
+		"moment": "^2.29.3",
+		"moment-duration-format": "^2.3.2"
+	}
+}

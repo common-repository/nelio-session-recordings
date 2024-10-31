@@ -1,0 +1,35 @@
+@import "~admin-stylesheets/colors";
+@import "~admin-stylesheets/variables";
+
+.neliosr-recording-sidebar {
+	border-left: 1px solid $color__border-editor;
+	box-sizing: border-box;
+	z-index: 2;
+
+	&__element-wrapper {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		overflow-y: auto;
+	}
+
+	&__toggle {
+		background-color: #fff;
+		border: 1px solid $color__border-editor;
+		border-right: none;
+		position: fixed;
+		right: calc($editor-sidebar-width - 1px);
+		z-index: 999;
+		top: 5em;
+		transition: 0.2s all ease-in-out;
+
+		&:focus:not(:disabled) {
+			box-shadow: none;
+		}
+
+		&--sidebar-closed {
+			right: 0;
+		}
+	}
+}

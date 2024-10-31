@@ -1,0 +1,43 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"jsx": "react",
+		"lib": [ "es2021", "dom" ],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"outDir": "dist",
+		"allowUnusedLabels": false,
+		"alwaysStrict": true,
+		"emitDecoratorMetadata": true,
+		"esModuleInterop": true,
+		"exactOptionalPropertyTypes": false,
+		"experimentalDecorators": true,
+		"noImplicitAny": true,
+		"noImplicitReturns": true,
+		"noImplicitThis": true,
+		"noUncheckedIndexedAccess": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"pretty": true,
+		"removeComments": false,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strictFunctionTypes": true,
+		"strictNullChecks": true,
+		"target": "es5",
+		"typeRoots": [ "node_modules/@types", "types" ],
+		"paths": {
+			"@neliosr/components": [ "packages/components" ],
+			"@neliosr/data": [ "packages/data" ],
+			"@neliosr/date": [ "packages/date" ],
+			"@neliosr/i18n": [ "packages/i18n" ],
+			"@neliosr/types": [ "packages/types" ],
+			"@neliosr/utils": [ "packages/utils" ],
+			"@safe-wordpress/*": [ "packages/safe-wordpress/*" ]
+		}
+	},
+	"exclude": [ "node_modules" ],
+	"compileOnSave": false,
+	"buildOnSave": false
+}

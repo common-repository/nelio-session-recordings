@@ -1,0 +1,21 @@
+{
+	"name": "@neliosr/i18n",
+	"version": "1.0.0",
+	"description": "Internationalization library with helper functions for Nelio Session Recordings.",
+	"author": "Nelio Software",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"plugin",
+		"session",
+		"recordings",
+		"analytics"
+	],
+	"homepage": "https://neliosoftware.com/session-recordings/",
+	"repository": "https://bitbucket.org/neliosoftware/nelio-session-recordings",
+	"bugs": {},
+	"devDependencies": {
+		"@types/lodash": "^4.14.171",
+		"lodash": "^4.17.21"
+	}
+}

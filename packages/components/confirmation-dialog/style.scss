@@ -1,0 +1,22 @@
+@import "~admin-stylesheets/mixins";
+
+.neliosr-confirmation-dialog {
+
+	&.components-modal__frame {
+		max-width: 50em;
+	}
+
+	&__actions {
+		margin-top: 2em;
+		text-align: right;
+	}
+
+	&__confirm-action.components-button {
+		margin-left: 0.5em;
+	}
+
+	&__confirm-action--is-destructive.components-button {
+
+		@include super-delete;
+	}
+}
